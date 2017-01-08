@@ -1,6 +1,6 @@
 module records
 
-imports ds-signatures/Records-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/store
 

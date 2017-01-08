@@ -1,6 +1,6 @@
 module types
 
-imports ds-signatures/Types-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/bindings
 

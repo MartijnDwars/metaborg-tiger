@@ -1,8 +1,6 @@
 module arrays
 
-imports ds-signatures/Identifiers-sig
-imports ds-signatures/Variables-sig
-imports ds-signatures/Arrays-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/natives
 imports dynamics/store
 imports dynamics/base

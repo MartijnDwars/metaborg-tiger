@@ -1,6 +1,6 @@
 module bindings
 
-imports ds-signatures/Bindings-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/store
 

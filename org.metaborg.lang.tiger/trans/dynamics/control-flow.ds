@@ -1,6 +1,6 @@
 module control-flow
 
-imports ds-signatures/Control-Flow-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/store
 imports dynamics/natives

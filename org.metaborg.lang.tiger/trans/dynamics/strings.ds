@@ -1,6 +1,6 @@
 module strings
 
-imports ds-signatures/Strings-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/natives
 imports dynamics/numbers

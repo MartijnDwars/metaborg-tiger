@@ -8,6 +8,11 @@ imports
   desugar
   analysis
 
+// This is only needed to satisfy TypeSmart when compiling the language
+signature
+  constructors
+    Conss : a * List(a) -> Iter
+
 rules // Debugging
   
   debug-show-aterm:
@@ -29,5 +34,3 @@ rules // Desugaring
     with
       filename := <guarantee-extension(|"aterm")> path
     ; result   := <desugar-all>node
-    
-

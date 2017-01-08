@@ -1,7 +1,6 @@
 module variables
 
-imports ds-signatures/Identifiers-sig
-imports ds-signatures/Variables-sig
+imports ds-signatures/Tiger-sig
 imports dynamics/base
 imports dynamics/bindings
 imports dynamics/store
