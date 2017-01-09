@@ -50,11 +50,9 @@ rules // operators
      ty1 == ty2.
         
   [[ Or(e1, e2) ^ (s) : INT() ]] :=
-     [[ e1 ^ (s) : ty1 ]], [[ e2 ^ (s): ty2 ]],
-     ty1 == ty2.
+     [[ e1 ^ (s) : INT() ]], [[ e2 ^ (s): INT() ]].
         
   [[ And(e1, e2) ^ (s) : INT() ]] :=
-     [[ e1 ^ (s) : ty1 ]], [[ e2 ^ (s): ty2 ]],
-     ty1 == ty2.
+     [[ e1 ^ (s) : INT() ]], [[ e2 ^ (s): INT() ]].
      
      
