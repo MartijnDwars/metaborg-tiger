@@ -43,7 +43,14 @@ rules
             IntV(eqI(id1, id2)) => v
           otherwise =>
             IntV(0) => v
-        }     
+        }
+      UnitV() =>
+        case v2 of {
+          UnitV() =>
+            IntV(1) => v
+          otherwise =>
+            IntV(0) => v
+        }   
     }.
       
   Neq(e1, e2) --> If(Eq(e1, e2), Int("0"), Int("1")).
