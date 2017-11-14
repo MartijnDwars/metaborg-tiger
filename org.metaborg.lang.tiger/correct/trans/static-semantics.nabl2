@@ -4,9 +4,13 @@ imports signatures/-
 imports trans/-
 
 signature
+  namespaces
+    Type
+    Var
+    Field
+    Loop
+
   name resolution
-    namespaces
-      Type Var Field Loop
     labels 
       P I 
     well-formedness 
@@ -16,18 +20,21 @@ signature
       D < I, 
       I < P
   
-  types
-    UNIT()
-    INT()
-    STRING()
-    NIL()
-    RECORD(scope)
-    ARRAY(type, scope)
-    FUN(type, type)
-    TC1()
-    TC2(type)
-    TC3(scope)
-    TC4(type, scope, type)
+  sorts
+    Type
+
+  constructors
+    UNIT : Type
+    INT : Type
+    STRING : Type
+    NIL : Type
+    RECORD : scope -> Type
+    ARRAY : Type * scope -> Type
+    FUN : Type * Type -> Type
+    TC1 : Type
+    TC2 : Type -> Type
+    TC3 : scope -> Type
+    TC4 : Type * scope * Type -> Type
 
 rules
 
